@@ -1,0 +1,7 @@
+///////////////////////////////////////
+// SURVEY FORM
+////////////////////////////////////////
+- use npx http-server .
+--> to run a server (in the terminal at the bottom)
+--> should world
+--> install extensions for efficiency
