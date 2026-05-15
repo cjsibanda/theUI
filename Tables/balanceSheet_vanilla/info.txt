@@ -1,0 +1,7 @@
+///////////////////////////////////////
+// TABLE: Balance Sheet
+////////////////////////////////////////
+- use npx http-server .
+--> to run a server (in the terminal at the bottom)
+--> should work :)
+
