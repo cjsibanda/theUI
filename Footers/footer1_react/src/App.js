@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <main
+        style={{
+          minHeight: "150vh",
+          padding: "4rem",
+          textAlign: "center",
+          background:
+            "linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)",
+        }}
+      >
+        <h1>Welcome to Sibanda Design</h1>
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          If you want to go fast, go alone.
+          If you want to go far, go together.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <p>[Scroll Down]</p>
+      </main>
+
+      <Footer />
     </div>
   );
 }
