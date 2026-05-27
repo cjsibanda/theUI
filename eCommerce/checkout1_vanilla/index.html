@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Payment UI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="checkout-container">
+
+    <!-- Apple Pay -->
+    <button class="pay-btn apple-pay">
+       Pay
+    </button>
+
+    <!-- Google Pay -->
+    <button class="pay-btn google-pay">
+      <span class="google-g">G</span> Pay
+    </button>
+
+    <!-- Card Section -->
+    <div class="payment-card">
+
+      <div class="card-header">
+        <div class="left-side">
+          <div class="card-icon">💳</div>
+
+          <div>
+            <h2>Card</h2>
+
+            <div class="card-brands">
+              <span class="visa">VISA</span>
+              <span class="mastercard"></span>
+              <span class="amex">AMEX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="radio-circle active"></div>
+      </div>
+
+      <form id="paymentForm">
+
+        <!-- Name -->
+        <div class="form-group">
+          <label>Name on card</label>
+          <input
+            type="text"
+            id="cardName"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <!-- Card Number -->
+        <div class="form-group">
+          <label>Card number</label>
+
+          <div class="card-number-wrapper">
+            <span class="mini-card"></span>
+
+            <input
+              type="text"
+              id="cardNumber"
+              maxlength="19"
+              placeholder="1234 5678 9012 3456"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row">
+
+          <div class="form-group half">
+            <label>Expiry date</label>
+            <span class="helper-text">Format is MM/YY</span>
+
+            <input
+              type="text"
+              id="expiry"
+              maxlength="5"
+              placeholder="MM/YY"
+              required
+            />
+          </div>
+
+          <div class="form-group half">
+            <label>Security code (CVV)</label>
+            <span class="helper-text">
+              3 or 4 digit code on your card
+            </span>
+
+            <input
+              type="password"
+              id="cvv"
+              maxlength="4"
+              placeholder="123"
+              required
+            />
+          </div>
+
+        </div>
+
+        <!-- Pay Button -->
+        <button type="submit" class="submit-btn">
+          Pay
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
