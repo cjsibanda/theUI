@@ -121,7 +121,7 @@ function App() {
               type="text"
               value={cardName}
               onChange={(e) => setCardName(e.target.value)}
-              placeholder="John Doe"
+              placeholder="CJ Sibanda"
               required
             />
 
