@@ -1,0 +1,329 @@
+/* =========================================
+   Global Reset
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7fa;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 0;
+}
+
+/* =========================================
+   Hero Section
+========================================= */
+
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    padding: 0 20px;
+}
+
+.main-heading {
+
+    font-size: 3.2rem;
+
+    font-weight: 700;
+
+    color: #222;
+
+    margin-bottom: 15px;
+}
+
+.sub-heading {
+
+    font-size: 1.15rem;
+
+    color: #666;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+/* =========================================
+   Carousel Layout
+========================================= */
+
+.carousel-container {
+
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.carousel-wrapper {
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.carousel-track {
+
+    display: flex;
+
+    transition: transform 0.5s ease;
+}
+
+/* =========================================
+   Slides
+========================================= */
+
+.slide {
+
+    min-width: 100%;
+
+    height: 450px;
+
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.15);
+}
+
+.slide h2 {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   Button
+========================================= */
+
+.goto-btn {
+
+    border: none;
+
+    padding: 14px 32px;
+
+    border-radius: 999px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.goto-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   Navigation
+========================================= */
+
+.nav-btn {
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+
+    transform: scale(1.1);
+}
+
+/* =========================================
+   Colors
+========================================= */
+
+.red {
+    background: linear-gradient(135deg,#ff5f6d,#ffc371);
+}
+
+.blue {
+    background: linear-gradient(135deg,#36d1dc,#5b86e5);
+}
+
+.green {
+    background: linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.purple {
+    background: linear-gradient(135deg,#8e44ad,#c471ed);
+}
+
+.orange {
+    background: linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.teal {
+    background: linear-gradient(135deg,#00b894,#00cec9);
+}
+
+/* =========================================
+   Dots
+========================================= */
+
+.dots {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.dot {
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #d0d0d0;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.dot.active {
+
+    background: #222;
+
+    transform: scale(1.2);
+}
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 768px) {
+
+    .main-heading {
+        font-size: 2.3rem;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+    .slide {
+        height: 350px;
+    }
+
+    .slide h2 {
+        font-size: 2rem;
+    }
+
+    .nav-btn {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 30px 0;
+    }
+
+    .hero {
+        margin-bottom: 35px;
+    }
+
+    .main-heading {
+
+        font-size: 1.8rem;
+
+        line-height: 1.3;
+    }
+
+    .sub-heading {
+
+        font-size: 0.95rem;
+    }
+
+    .carousel-container {
+
+        width: 95%;
+
+        gap: 8px;
+    }
+
+    .slide {
+
+        height: 260px;
+    }
+
+    .slide h2 {
+
+        font-size: 1.5rem;
+    }
+
+    .goto-btn {
+
+        padding: 12px 24px;
+
+        font-size: 0.9rem;
+    }
+
+    .nav-btn {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 1.1rem;
+    }
+}
