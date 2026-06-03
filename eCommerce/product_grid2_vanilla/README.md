@@ -5,7 +5,7 @@ A responsive product grid component built with vanilla HTML, CSS, and Vanilla Ja
 
 ## Screenshot
 
-![Sibanda's Flowers UI](images/flowers_screenshot.png)
+![Sibanda's Flowers UI](images/flower_screenshot.png)
 
 ## Features
 
