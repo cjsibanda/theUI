@@ -1,0 +1,41 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.selectors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+select {
+    padding: 10px;
+}
+
+h1 {
+    color: royalblue;
+}
+
+h2 {
+    color: green;
+    margin-top: 20px;
+}
