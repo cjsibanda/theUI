@@ -1,3 +1,49 @@
+import arrangement1 from "../assets/images/products/arrangement1.jpg";
+import arrangement2 from "../assets/images/products/arrangement2.jpg";
+import arrangement3 from "../assets/images/products/arrangement3.jpg";
+import arrangement4 from "../assets/images/products/arrangement4.jpg";
+import arrangement5 from "../assets/images/products/arrangement5.jpg";
+import arrangement6 from "../assets/images/products/arrangement6.jpg";
+
+const products = [
+  {
+    image: arrangement1,
+    name: "Summer Roses",
+    description: "Fresh cut roses in a decorative vase.",
+    price: "$59.99"
+  },
+  {
+    image: arrangement2,
+    name: "Sunshine Bouquet",
+    description: "Bright yellow blooms perfect for summer.",
+    price: "$69.99"
+  },
+  {
+    image: arrangement3,
+    name: "Elegant White",
+    description: "Premium white flowers for special occasions.",
+    price: "$74.99"
+  },
+  {
+    image: arrangement4,
+    name: "Garden Mix",
+    description: "A colorful assortment of seasonal flowers.",
+    price: "$64.99"
+  },
+  {
+    image: arrangement5,
+    name: "Pink Delight",
+    description: "Soft pink arrangements with lush greenery.",
+    price: "$79.99"
+  },
+  {
+    image: arrangement6,
+    name: "Luxury Collection",
+    description: "Our most premium flower arrangement.",
+    price: "$99.99"
+  }
+];
+
 export function ProductGrid() {
   return `
   
@@ -29,12 +75,7 @@ export function ProductGrid() {
         "
       >
 
-        ${createCard()}
-        ${createCard()}
-        ${createCard()}
-        ${createCard()}
-        ${createCard()}
-        ${createCard()}
+        ${products.map(product => createCard(product)).join("")}
 
       </div>
 
@@ -45,7 +86,12 @@ export function ProductGrid() {
   `;
 }
 
-function createCard() {
+function createCard(product: {
+  image: string;
+  name: string;
+  description: string;
+  price: string;
+}) {
   return `
   
     <div
@@ -57,20 +103,16 @@ function createCard() {
       "
     >
 
-      <!-- Image Placeholder -->
-      <div
+      <img
+        src="${product.image}"
+        alt="${product.name}"
         class="
+          w-full
           h-64
-          bg-gray-200
-          flex
-          items-center
-          justify-center
+          object-cover
         "
-      >
-        Image Placeholder
-      </div>
+      />
 
-      <!-- Content -->
       <div class="p-6">
 
         <h3
@@ -80,7 +122,7 @@ function createCard() {
             mb-2
           "
         >
-          Flower 1
+          ${product.name}
         </h3>
 
         <p
@@ -89,7 +131,7 @@ function createCard() {
             mb-4
           "
         >
-          Fresh cut roses
+          ${product.description}
         </p>
 
         <p
@@ -100,7 +142,7 @@ function createCard() {
             mb-6
           "
         >
-          $59.99
+          ${product.price}
         </p>
 
         <button
