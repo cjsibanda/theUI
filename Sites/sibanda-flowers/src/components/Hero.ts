@@ -1,40 +1,65 @@
+import heroBackground from "../assets/images/hero-background.jpg";
+
 export function Hero() {
   return `
   
   <section
     class="
-      bg-white
+      relative
       flex
-      flex-col
       items-center
       justify-center
-      py-24
+      py-40
+      bg-cover
+      bg-center
+    "
+    style="
+      background-image: url('${heroBackground}');
     "
   >
 
-    <h1
+    <div
       class="
-        text-5xl
-        font-bold
-        text-blue-600
-        mb-8
+        absolute
+        inset-0
+        bg-black/40
       "
-    >
-      Get Summer Deals!!
-    </h1>
+    ></div>
 
-    <button
+    <div
       class="
-        bg-blue-600
-        text-white
-        px-8
-        py-3
-        rounded-lg
-        hover:bg-blue-700
+        relative
+        z-10
+        flex
+        flex-col
+        items-center
       "
     >
-      See Deals
-    </button>
+
+      <h1
+        class="
+          text-5xl
+          font-bold
+          text-white
+          mb-8
+        "
+      >
+        Get Summer Deals!!
+      </h1>
+
+      <button
+        class="
+          bg-blue-600
+          text-white
+          px-8
+          py-3
+          rounded-lg
+        "
+      >
+        See Deals
+      </button>
+
+    </div>
 
   </section>
   
