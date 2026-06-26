@@ -2,50 +2,88 @@ export function Navbar() {
   return `
   
   <nav class="bg-sky-500 text-white px-6 py-4">
-  
+
     <div class="flex items-center justify-between">
-    
-      <!-- Logo -->
-      <div class="font-bold leading-none">
-        <div>SIBANDA</div>
-        <div>FLOWERS</div>
+
+      <!-- LEFT: LOGO + SEARCH -->
+      <div class="flex items-center gap-6">
+
+        <!-- Logo -->
+        <div class="font-bold leading-none">
+          <div>SIBANDA</div>
+          <div>FLOWERS</div>
+        </div>
+
+        
+        <div class="hidden md:block w-1/4">
+          <input
+            type="text"
+            placeholder="Search flowers..."
+            class="w-full rounded-2xl px-4 py-2 text-black bg-white"
+          />
+        </div>
+
       </div>
 
-      <!-- Search -->
-      <div class="w-1/3">
-        <input
-          type="text"
-          placeholder="text"
-          class="w-full rounded-lg px-4 py-2 text-black bg-white"
-        />
+      
+      <div class="hidden md:flex items-center gap-8 font-medium">
+
+        <a href="#" class="text-yellow-300">
+          Home
+        </a>
+
+        <a href="#" class="hover:text-yellow-200 text-white">
+          About
+        </a>
+
+        <a href="#" class="hover:text-yellow-200 text-white">
+          Services
+        </a>
+
+        <a href="#" class="hover:text-yellow-200 text-white">
+          Contact
+        </a>
+
       </div>
 
-      <!-- Right Side -->
-      <div class="relative flex items-center gap-6">
+      <!-- RIGHT SIDE -->
+      <div class="flex items-center gap-6">
 
         <!-- Cart -->
-        <button>
+        <button class="text-xl">
           🛒
         </button>
 
-        <!-- Menu -->
-        <div>
-          <button
-            id="menu-button"
-            class="text-2xl"
-          >
-            ☰
-          </button>
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-button"
+          class="text-2xl md:hidden"
+        >
+          ☰
+        </button>
 
-          <div
-            id="dropdown"
-            class="hidden absolute right-0 mt-2 bg-white text-black rounded shadow-lg min-w-[180px]"
-          >
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100">About</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Services</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
-          </div>
+        <!-- Dropdown (mobile only) -->
+        <div
+          id="dropdown"
+          class="hidden absolute right-6 top-16 bg-white text-black rounded-lg shadow-lg min-w-[180px]"
+        >
+
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Home
+          </a>
+
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            About
+          </a>
+
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Services
+          </a>
+
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Contact
+          </a>
+
         </div>
 
       </div>
@@ -53,6 +91,6 @@ export function Navbar() {
     </div>
 
   </nav>
-  
+
   `;
 }

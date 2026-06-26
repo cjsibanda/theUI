@@ -5,7 +5,7 @@ import { CustomArrangement } from "./components/CustomArrangement";
 import { Footer } from "./components/Footer";
 
 export function App() {
-  return `
+  return `git
   
     ${Navbar()}
     ${Hero()}
