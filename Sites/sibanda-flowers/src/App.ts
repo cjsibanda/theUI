@@ -1,3 +1,4 @@
+/*
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ProductGrid } from "./components/ProductGrid";
@@ -15,5 +16,18 @@ export function App() {
     ${Services()}
     ${Footer()}
   
+  `;
+}
+  */
+
+import { Navbar } from "./components/Navbar";
+import { AboutPage } from "./pages/AboutPage";
+
+export function App() {
+  return `
+
+    ${Navbar()}
+    ${AboutPage()}
+
   `;
 }
