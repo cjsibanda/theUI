@@ -44,15 +44,15 @@ export function Navbar() {
             Home
           </a>
 
-          <a href="#" class="text-white hover:text-yellow-200 transition">
+          <a href="#about" class="text-white hover:text-yellow-200 transition">
             About
           </a>
 
-          <a href="#" class="text-white hover:text-yellow-200 transition">
+          <a href="#services" class="text-white hover:text-yellow-200 transition">
             Services
           </a>
 
-          <a href="#" class="text-white hover:text-yellow-200 transition">
+          <a href="#contact" class="text-white hover:text-yellow-200 transition">
             Contact
           </a>
 
