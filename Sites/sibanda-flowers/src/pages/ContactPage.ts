@@ -1,10 +1,11 @@
-import { ContactHero } from "../components/ContactHero";
+import { PageHero } from "../components/PageHero";
 import { Footer } from "../components/Footer";
 
 export function ContactPage() {
   return `
   
-    ${ContactHero()}
+    ${PageHero("Contact")}
+
     ${Footer()}
 
   `;
