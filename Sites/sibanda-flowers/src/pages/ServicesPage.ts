@@ -6,7 +6,12 @@ export function ServicesPage() {
 
   const servicesHTML = servicesData
     .map(service =>
-      ServiceCard(service.title, service.description)
+      ServiceCard(
+      service.title,
+      service.description,
+      service.icon,
+      service.featured
+     ) 
     )
     .join("");
 
