@@ -1,4 +1,10 @@
-export function Navbar() {
+export function Navbar(currentPage: String) {
+  const activeLink = (page: string) => {
+  return currentPage === page
+    ? "text-yellow-300 border-b-2 border-yellow-300 pb-1"
+    : "text-white hover:text-yellow-200 transition";
+};
+
   return `
   
   <nav class="bg-sky-500 text-white py-4">
@@ -40,19 +46,19 @@ export function Navbar() {
         <!-- Links -->
         <div class="hidden md:flex items-center gap-6 font-semibold text-lg whitespace-nowrap">
 
-          <a href="#" class="text-yellow-300 border-b-2 border-yellow-300 pb-1">
+          <a href="#home" class="${activeLink("home")}">
             Home
           </a>
 
-          <a href="#about" class="text-white hover:text-yellow-200 transition">
+          <a href="#about" class="${activeLink("about")}">
             About
           </a>
 
-          <a href="#services" class="text-white hover:text-yellow-200 transition">
+          <a href="#services" class="${activeLink("services")}">
             Services
           </a>
 
-          <a href="#contact" class="text-white hover:text-yellow-200 transition">
+          <a href="#contact" class="${activeLink("contact")}">
             Contact
           </a>
 
