@@ -1,5 +1,3 @@
-import { Navbar } from "./components/Navbar";
-
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { ServicesPage } from "./pages/ServicesPage";
@@ -10,34 +8,20 @@ export function App() {
   const currentPage =
     window.location.hash.replace("#", "") || "home";
 
-  let page = "";
-
   switch (currentPage) {
 
-  case "about":
-    page = AboutPage();
-    break;
+    case "about":
+      return AboutPage();
 
-  case "services":
-    page = ServicesPage();
-    break;
+    case "services":
+      return ServicesPage();
 
-  case "contact":
-    page = ContactPage();
-    break;
+    case "contact":
+      return ContactPage();
 
-  default:
-    page = HomePage();
-
+    default:
+      return HomePage();
 
   }
-  
 
-  return `
-
-    ${Navbar(currentPage)}
-
-    ${page}
-
-  `;
 }
