@@ -2,6 +2,8 @@ import { Navbar } from "./components/Navbar";
 
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
+import { ServicesPage } from "./pages/ServicesPage";
+import { ContactPage } from "./pages/ContactPage";
 
 export function App() {
 
@@ -12,14 +14,24 @@ export function App() {
 
   switch (currentPage) {
 
-    case "about":
-      page = AboutPage();
-      break;
+  case "about":
+    page = AboutPage();
+    break;
 
-    default:
-      page = HomePage();
+  case "services":
+    page = ServicesPage();
+    break;
+
+  case "contact":
+    page = ContactPage();
+    break;
+
+  default:
+    page = HomePage();
+
 
   }
+  
 
   return `
 
