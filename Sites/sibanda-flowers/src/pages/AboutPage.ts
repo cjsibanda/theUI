@@ -1,10 +1,10 @@
-import { AboutHero } from "../components/AboutHero";
+import { PageHero } from "../components/PageHero";
 import { Footer } from "../components/Footer";
 
 export function AboutPage() {
   return `
-
-    ${AboutHero()}
+  
+    ${PageHero("About")}
 
     ${Footer()}
 
