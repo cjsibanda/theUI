@@ -14,7 +14,7 @@ export function Services() {
         </div>
 
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
-          Get Started
+          Flowers for All Occasions
         </h2>
 
         <p class="text-white/90 max-w-2xl mx-auto text-lg">
@@ -29,18 +29,18 @@ export function Services() {
         <!-- LEFT COLUMN (3 stacked on md+) -->
         <div class="flex flex-col gap-6">
 
-          ${serviceCard("Statement 1")}
-          ${serviceCard("Statement 2")}
-          ${serviceCard("Statement 3")}
+          ${serviceCard("Prom & Graduation")}
+          ${serviceCard("Weddings")}
+          ${serviceCard("Anniversaries")}
 
         </div>
 
         <!-- RIGHT COLUMN (3 stacked on md+) -->
         <div class="flex flex-col gap-6">
 
-          ${serviceCard("Statement 4")}
-          ${serviceCard("Statement 5")}
-          ${serviceCard("Statement 6")}
+          ${serviceCard("Corporate Events")}
+          ${serviceCard("Sympathy & Funerals")}
+          ${serviceCard("New Baby & Baby Showers")}
 
         </div>
 

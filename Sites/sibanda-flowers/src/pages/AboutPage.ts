@@ -10,11 +10,16 @@ export function AboutPage() {
         </h2>
 
         <p class="mb-4">
-          Sibanda-Flowers started with a passion for creating meaningful floral experiences...
+          Welcome to Sibanda Flowers! Sibanda-Flowers started with a passion for creating meaningful floral experiences.
+          Flowers are not just a purchase - they are an experience. Our flowers and designs are the best and the freshest.
         </p>
 
         <p>
-          We specialize in weddings, events, and custom arrangements designed with care.
+          We specialize in weddings, events, and custom arrangements designed with care. We
+          started out business many years ago and we been commited to supporting local growers
+          in the GTA area. We pride ourselves with using the freshest and high-quality flowers.
+          We are passionate about flowers and we love being part of your special occasions.
+          No matter that occasion, e have the flowers that will make your day.
         </p>
       </div>
     `
