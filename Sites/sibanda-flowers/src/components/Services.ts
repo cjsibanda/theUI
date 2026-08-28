@@ -74,7 +74,7 @@ function serviceCard(title: string) {
       </h3>
 
       <p class="text-gray-600">
-        More Information about Sibanda-Flowers
+        Contact us for more information and to schedule an appointment.
       </p>
 
     </div>
