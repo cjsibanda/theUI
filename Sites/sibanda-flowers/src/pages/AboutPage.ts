@@ -19,7 +19,7 @@ export function AboutPage() {
           started out business many years ago and we been commited to supporting local growers
           in the GTA area. We pride ourselves with using the freshest and high-quality flowers.
           We are passionate about flowers and we love being part of your special occasions.
-          No matter that occasion, e have the flowers that will make your day.
+          No matter that occasion, we have the flowers that will make your day.
         </p>
       </div>
     `
