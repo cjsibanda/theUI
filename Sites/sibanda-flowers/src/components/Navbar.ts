@@ -1,4 +1,4 @@
-export function Navbar(currentPage: String) {
+export function Navbar(currentPage: string) {
   const activeLink = (page: string) => {
     return currentPage === page
       ? "text-yellow-300 border-b-2 border-yellow-300 pb-1"
@@ -6,7 +6,7 @@ export function Navbar(currentPage: String) {
   };
 
   return `
-  <!-- Added 'relative' and 'z-50' to establish a clean stacking context -->
+  <!-- CENTERED CONTAINER with relative positioning & z-index -->
   <nav class="bg-sky-500 text-white py-4 relative z-50">
 
     <!-- CENTERED CONTAINER -->
@@ -78,15 +78,44 @@ export function Navbar(currentPage: String) {
 
     </div>
 
-    <!-- Dropdown (Added z-50 and correct href hash routes) -->
+    <!-- Dropdown (Option 1: Modern Sky Blue Theme) -->
     <div
       id="dropdown"
-      class="hidden absolute right-6 top-full mt-2 bg-white text-black rounded-lg shadow-xl min-w-[180px] z-50 py-2 border border-gray-100"
+      class="hidden absolute right-6 top-full mt-2 w-56 bg-sky-600 text-white rounded-2xl shadow-2xl z-50 p-2 border border-sky-400/30 backdrop-blur-md"
     >
-      <a href="#home" class="mobile-link block px-4 py-2 hover:bg-gray-100">Home</a>
-      <a href="#about" class="mobile-link block px-4 py-2 hover:bg-gray-100">About</a>
-      <a href="#services" class="mobile-link block px-4 py-2 hover:bg-gray-100">Services</a>
-      <a href="#contact" class="mobile-link block px-4 py-2 hover:bg-gray-100">Contact</a>
+      <div class="flex flex-col gap-1 font-medium">
+        <a 
+          href="#home" 
+          class="mobile-link flex items-center justify-between px-4 py-2.5 rounded-xl transition ${currentPage === 'home' ? 'bg-sky-700 text-yellow-300 font-bold' : 'hover:bg-sky-500/80 hover:text-yellow-200'}"
+        >
+          <span>Home</span>
+          ${currentPage === 'home' ? '<span class="text-xs">●</span>' : ''}
+        </a>
+
+        <a 
+          href="#about" 
+          class="mobile-link flex items-center justify-between px-4 py-2.5 rounded-xl transition ${currentPage === 'about' ? 'bg-sky-700 text-yellow-300 font-bold' : 'hover:bg-sky-500/80 hover:text-yellow-200'}"
+        >
+          <span>About</span>
+          ${currentPage === 'about' ? '<span class="text-xs">●</span>' : ''}
+        </a>
+
+        <a 
+          href="#services" 
+          class="mobile-link flex items-center justify-between px-4 py-2.5 rounded-xl transition ${currentPage === 'services' ? 'bg-sky-700 text-yellow-300 font-bold' : 'hover:bg-sky-500/80 hover:text-yellow-200'}"
+        >
+          <span>Services</span>
+          ${currentPage === 'services' ? '<span class="text-xs">●</span>' : ''}
+        </a>
+
+        <a 
+          href="#contact" 
+          class="mobile-link flex items-center justify-between px-4 py-2.5 rounded-xl transition ${currentPage === 'contact' ? 'bg-sky-700 text-yellow-300 font-bold' : 'hover:bg-sky-500/80 hover:text-yellow-200'}"
+        >
+          <span>Contact</span>
+          ${currentPage === 'contact' ? '<span class="text-xs">●</span>' : ''}
+        </a>
+      </div>
     </div>
 
   </nav>
