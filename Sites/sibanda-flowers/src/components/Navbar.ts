@@ -1,13 +1,13 @@
 export function Navbar(currentPage: String) {
   const activeLink = (page: string) => {
-  return currentPage === page
-    ? "text-yellow-300 border-b-2 border-yellow-300 pb-1"
-    : "text-white hover:text-yellow-200 transition";
-};
+    return currentPage === page
+      ? "text-yellow-300 border-b-2 border-yellow-300 pb-1"
+      : "text-white hover:text-yellow-200 transition";
+  };
 
   return `
-  
-  <nav class="bg-sky-500 text-white py-4">
+  <!-- Added 'relative' and 'z-50' to establish a clean stacking context -->
+  <nav class="bg-sky-500 text-white py-4 relative z-50">
 
     <!-- CENTERED CONTAINER -->
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between gap-6">
@@ -69,8 +69,8 @@ export function Navbar(currentPage: String) {
           🛒
         </button>
 
-        <!-- Mobile Menu -->
-        <button id="menu-button" class="text-2xl md:hidden">
+        <!-- Mobile Menu Button -->
+        <button id="menu-button" class="text-2xl md:hidden focus:outline-none" aria-label="Toggle Menu">
           ☰
         </button>
 
@@ -78,18 +78,17 @@ export function Navbar(currentPage: String) {
 
     </div>
 
-    <!-- Dropdown -->
+    <!-- Dropdown (Added z-50 and correct href hash routes) -->
     <div
       id="dropdown"
-      class="hidden absolute right-6 top-16 bg-white text-black rounded-lg shadow-lg min-w-[180px]"
+      class="hidden absolute right-6 top-full mt-2 bg-white text-black rounded-lg shadow-xl min-w-[180px] z-50 py-2 border border-gray-100"
     >
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">About</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Services</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      <a href="#home" class="mobile-link block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="#about" class="mobile-link block px-4 py-2 hover:bg-gray-100">About</a>
+      <a href="#services" class="mobile-link block px-4 py-2 hover:bg-gray-100">Services</a>
+      <a href="#contact" class="mobile-link block px-4 py-2 hover:bg-gray-100">Contact</a>
     </div>
 
   </nav>
-
   `;
 }
