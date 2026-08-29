@@ -70,7 +70,7 @@ export function ContactPage() {
               <input
                 id="name"
                 type="text"
-                placeholder="John Smith"
+                placeholder="CJ Sibanda"
                 class="
                   w-full
                   rounded-lg
@@ -110,7 +110,7 @@ export function ContactPage() {
               <input
                 id="email"
                 type="email"
-                placeholder="john@email.com"
+                placeholder="cjsibanda@email.com"
                 class="
                   w-full
                   rounded-lg
