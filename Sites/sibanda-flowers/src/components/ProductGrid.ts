@@ -10,13 +10,13 @@ const products = [
     image: arrangement1,
     name: "Summer Roses",
     description: "Fresh cut roses in a decorative vase.",
-    price: "$59.99"
+    price: "$59.95"
   },
   {
     image: arrangement2,
     name: "Sunshine Bouquet",
     description: "Bright yellow blooms perfect for summer.",
-    price: "$69.99"
+    price: "$69.95"
   },
   {
     image: arrangement3,
@@ -28,19 +28,19 @@ const products = [
     image: arrangement4,
     name: "Garden Mix",
     description: "A colorful assortment of seasonal flowers.",
-    price: "$64.99"
+    price: "$64.95"
   },
   {
     image: arrangement5,
     name: "Pink Delight",
     description: "Soft pink arrangements with lush greenery.",
-    price: "$79.99"
+    price: "$79.95"
   },
   {
     image: arrangement6,
     name: "Luxury Collection",
     description: "Our most premium flower arrangement.",
-    price: "$99.99"
+    price: "$99.95"
   }
 ];
 
