@@ -110,7 +110,7 @@ export function ContactPage() {
               <input
                 id="email"
                 type="email"
-                placeholder="cjsibanda@email.com"
+                placeholder="sibanda@email.com"
                 class="
                   w-full
                   rounded-lg
