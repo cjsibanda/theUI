@@ -1,0 +1,522 @@
+/* --------------------------------------------------
+   Sibanda Safari Park
+   Main Styles
+-------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helevitica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+
+/**************************************************************
+Header
+*************************************************************/
+.site-header {
+  backroud: var(--footer-dark);
+  color: var(--white);
+}
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spaceing: 1px;
+}
+
+.brand h1 {
+  font-familt: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+
+/***************
+reps
+******************/
+
+:root {
+  --forest: #173b2c;
+  --forest-dark: #10291f;
+  --sage: #5d755f;
+  --gold: #c69b4b;
+  --gold-light: #dfbd79;
+  --cream: #f7f5ef;
+  --white: #ffffff;
+  --text: #26332c;
+  --muted: #69746d;
+  --border: #dfe3dd;
+  --shadow: 0 20px 50px rgba(22, 45, 34, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------
+   Header
+-------------------------------------------------- */
+
+.site-header {
+  background: var(--forest-dark);
+  color: var(--white);
+}
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brand h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.brand p {
+  color: #aebbb3;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.nav-button {
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 9px 18px;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.nav-button:hover {
+  background: var(--white);
+  color: var(--forest-dark);
+}
+
+/* --------------------------------------------------
+   Hero
+-------------------------------------------------- */
+
+.hero {
+  min-height: 410px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13, 37, 27, 0.88),
+      rgba(13, 37, 27, 0.42),
+      rgba(13, 37, 27, 0.18)
+    ),
+    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85")
+    center / cover no-repeat;
+}
+
+.hero-overlay {
+  min-height: 410px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: var(--white);
+  max-width: 650px;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--gold-light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h2 {
+  margin: 14px 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 7vw, 70px);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.hero p {
+  max-width: 570px;
+  color: #e5ebe7;
+  font-size: 17px;
+}
+
+/* --------------------------------------------------
+   Booking Section
+-------------------------------------------------- */
+
+.booking-section {
+  padding: 85px 0;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.booking-intro {
+  padding-top: 12px;
+}
+
+.booking-intro h2 {
+  margin: 10px 0 16px;
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.booking-intro > p {
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.info-card {
+  display: flex;
+  gap: 15px;
+  margin: 35px 0;
+  padding: 20px;
+  background: var(--white);
+  border-left: 3px solid var(--gold);
+  box-shadow: 0 10px 30px rgba(20, 40, 30, 0.06);
+}
+
+.info-icon {
+  flex-shrink: 0;
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.info-card h3 {
+  color: var(--forest);
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.info-card p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contact-details {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.contact-details strong {
+  color: var(--forest);
+  font-size: 15px;
+}
+
+/* --------------------------------------------------
+   Form
+-------------------------------------------------- */
+
+.booking-form {
+  background: var(--white);
+  padding: 42px;
+  box-shadow: var(--shadow);
+}
+
+.form-heading {
+  padding-bottom: 25px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-heading h3 {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.form-heading p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  margin-bottom: 7px;
+  color: var(--forest);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #fcfcfa;
+  color: var(--text);
+  padding: 13px 14px;
+  border-radius: 2px;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aa39d;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 3px rgba(93, 117, 95, 0.10);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+   Form Footer
+-------------------------------------------------- */
+
+.form-footer {
+  margin-top: 28px;
+  padding-top: 25px;
+  border-top: 1px solid var(--border);
+}
+
+.form-footer p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 18px;
+}
+
+button {
+  border: none;
+  background: var(--forest);
+  color: var(--white);
+  padding: 14px 22px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button span {
+  margin-left: 12px;
+  color: var(--gold-light);
+  font-size: 17px;
+}
+
+button:hover {
+  background: var(--forest-dark);
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
+
+.site-footer {
+  background: var(--forest-dark);
+  color: #aebbb3;
+}
+
+.footer-content {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+}
+
+/* --------------------------------------------------
+   Responsive
+-------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+  .booking-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .booking-intro {
+    padding-top: 0;
+  }
+
+  .booking-intro h2 {
+    font-size: 36px;
+  }
+
+  .hero,
+  .hero-overlay {
+    min-height: 360px;
+  }
+
+  .booking-form {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .brand h1 {
+    font-size: 17px;
+  }
+
+  .brand p {
+    display: none;
+  }
+
+  .nav-button {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .hero h2 {
+    font-size: 46px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .booking-section {
+    padding: 55px 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .booking-form {
+    padding: 25px 18px;
+  }
+
+  .footer-content {
+    padding: 15px 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
