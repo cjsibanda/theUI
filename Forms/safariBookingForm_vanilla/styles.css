@@ -14,14 +14,14 @@ html {
 }
 
 body {
-  font-family: Arial, Helevitica, sans-serif;
+  font-family: Arial, Tahoma Helevitica, sans-serif;
   background: var(--cream);
   color: var(--text);
   line-height: 1.6;
 }
 
 .container {
-  width: min(1120px, 92%);
+  width: min(1120px, 93%);
   margin: 0 auto;
 }
 
