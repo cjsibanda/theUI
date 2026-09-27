@@ -98,6 +98,66 @@ body {
   max-width: 650px;
 }
 
+hero-content {
+  color: white;
+  max-width: 650px;
+}
+
+.eyebrow,
+.section-label {
+  color: green;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.hero h2 {
+  margin: 14px 0 12px;
+  font-family: Tahoma;
+  font-size: clamp(44px, 7vw, 70px);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.hero p {
+  max-width: 570px;
+  color: lime;
+  font-size: 18px;
+}
+
+.booking-section {
+  padding: 85px 0;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 0.8fr, 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 0.8fr, 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.booking-intro {
+  padding-top: 12px;
+}
+
+.booking-intro h2 {
+  margin: 10px 0 16px;
+  color: green;
+  font-family: Tahoma;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 500
+}
+
+
+
 form {
   background-color: blue;
   color: white;
