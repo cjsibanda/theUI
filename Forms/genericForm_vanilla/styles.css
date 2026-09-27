@@ -158,8 +158,40 @@ hero-content {
 
 
 
-form {
+.booking-form {
   background-color: blue;
   color: white;
+  padding: 42px;
+  box-shadow: lime;
+}
+
+.form-heading {
+  padding-bottom: 25px;
+  margin-bottom: 28px;
+  box-bottom: 1px solid black;
+}
+
+.form-heading h3 {
+  color: green;
+  font-family: Tahoma, serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.form-heading p {
+  margin-top: 4px;
+  color: lime;
+  font-size: 13px;
+}
+
+.form-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 22px 18px; 
+}
+
+.form--group {
+  display: flex;
+  flex-direction: column;
 }
 
