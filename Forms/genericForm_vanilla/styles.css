@@ -1,3 +1,9 @@
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,9 +15,9 @@ html {
 }
 
 body {
-  font-family: Tahoma san-serif;
-  background-color: pink;
-  color: black;
+  font-family: Tahoma;
+  background-color: lime;
+  color: blue;
   line-height: 1.6;
 }
 
@@ -21,8 +27,8 @@ body {
 }
 
 .site-header {
-  background-color: black;
-  color: gold;
+  background-color: gold;
+  color: black;
 }
 
 .nav {
@@ -42,41 +48,20 @@ body {
 .brand-mark {
   width: 42px;
   height: 42px;
-  border: 1px solid pink;
-  color: white;
-  diplay: grid;
+  border: 1px solid lime;
+  color: blue;
+  display: grid;
   place-items: center;
-  font-size: 18px;
-  font-weight: 900;
-  letter-spaceng: 1px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .brand h1 {
-  font-famiy: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
-
-.brand p {
-  color: red;
-  font-size: 10px;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.nav-button {
-  color: white;
-  text-decoration: none;
-  border: 1px solid gold;
-  padding: 9px 18px;
-  font-size: 12px;
-  transition: 0.2s ease;
-}
-
-.nav-button:hover {
-  background: white;
-  color: gold;
+  font-family: Tahoma;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
 }
 
 .hero {
@@ -95,50 +80,43 @@ body {
 .hero-overlay {
   min-height: 410px;
   display: flex;
-  max-width: 650px;
+  align-items: center;
 }
 
-hero-content {
-  color: white;
+.hero-content {
+  color: gold;
   max-width: 650px;
 }
 
 .eyebrow,
 .section-label {
-  color: green;
-  font-size: 18px;
-  font-weight: 900;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
   letter-spacing: 2px;
 }
 
 .hero h2 {
   margin: 14px 0 12px;
   font-family: Tahoma;
-  font-size: clamp(44px, 7vw, 70px);
+  font-size: 22px;
   line-height: 1;
   font-weight: 500;
 }
 
 .hero p {
-  max-width: 570px;
+  max-width: 600px;
   color: lime;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .booking-section {
-  padding: 85px 0;
+  padding: 80px 0;
 }
 
 .booking-layout {
   display: grid;
-  grid-template-columns: 0.8fr, 1.2fr;
-  gap: 70px;
-  align-items: start;
-}
-
-.booking-layout {
-  display: grid;
-  grid-template-columns: 0.8fr, 1.2fr;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: 70px;
   align-items: start;
 }
@@ -147,51 +125,109 @@ hero-content {
   padding-top: 12px;
 }
 
-.booking-intro h2 {
-  margin: 10px 0 16px;
-  color: green;
-  font-family: Tahoma;
-  font-size: 42px;
-  line-height: 1.2;
-  font-weight: 500
+.booking-intro > p {
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.info-card {
+  display: flex;
+  gap: 15px;
+  margin: 35px 0;
+  padding: 20px;
+  background-color: white;
 }
 
 
+/*******************************************
+FORM
+*******************************************/
 
 .booking-form {
-  background-color: blue;
-  color: white;
+  background-color: skyblue;
   padding: 42px;
-  box-shadow: lime;
+  box-shadow: 0 20px 50px rgba(22, 45, 34, 0.10);
 }
 
 .form-heading {
   padding-bottom: 25px;
   margin-bottom: 28px;
-  box-bottom: 1px solid black;
 }
 
 .form-heading h3 {
-  color: green;
-  font-family: Tahoma, serif;
+  color: #10291f;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .form-heading p {
   margin-top: 4px;
-  color: lime;
-  font-size: 13px;
+  color: gold;
+  font-size: 16px;
 }
 
 .form-grid {
- display: grid;
- grid-template-columns: 1fr 1fr;
- gap: 22px 18px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 18px;
 }
 
-.form--group {
-  display: flex;
-  flex-direction: column;
+.full-width {
+  grid-column: 1/ -1;
 }
 
+.contact-details {
+  color: #69746d;
+  
+}
+
+label {
+  margin-bottom: 7px;
+  color:  #10291f;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.input,
+select,
+textarea {
+  width: 100%;
+  border: 2px solid gold;
+  background: white;
+  padding: 13px 14px;
+  border-radius: 2px;
+  font: inherit;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aa39d;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: gold;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background-color: lime;
+  color: blue;
+  padding: 14px 22px;
+  font: inherit;
+  font-size: 19px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  background: gold;
+}
